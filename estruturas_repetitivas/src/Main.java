@@ -153,29 +153,56 @@ public class Main {
 		
 		
 		//EXERCÍCIO02 
-		Scanner sc10 = new Scanner(System.in);
-
-		int x8 = sc10.nextInt();
-		int y6 = sc10.nextInt();
-				
-		while (x8 != 0 && y6 != 0) {
-			if (x8 > 0 && y6 > 0) {
-				System.out.println("Primeiro quadrante");
+//		Scanner sc10 = new Scanner(System.in);
+//
+//		int x8 = sc10.nextInt();
+//		int y6 = sc10.nextInt();
+//				
+//		while (x8 != 0 && y6 != 0) {
+//			if (x8 > 0 && y6 > 0) {
+//				System.out.println("Primeiro quadrante");
+//			}
+//			else if (x8 < 0 && y6 > 0) {
+//				System.out.println("Segundo quadrante");
+//			}
+//			else if (x8 < 0 && y6 < 0) {
+//				System.out.println("Terceiro quadrante");
+//			}
+//			else {
+//				System.out.println("Quarto quadrante");
+//			}
+//			x8 = sc10.nextInt();
+//			y6 = sc10.nextInt();
+//		}
+//				
+//		sc10.close();
+		
+		//EXERCÍCIO03
+		Scanner sc11 = new Scanner (System.in);
+		
+		int alcool = 0;
+		int gasolina = 0;
+		int diesel = 0;
+		int combustivel = sc11.nextInt();
+		
+		while (combustivel != 4) {
+			if (combustivel == 1) {
+				alcool += 1;
 			}
-			else if (x8 < 0 && y6 > 0) {
-				System.out.println("Segundo quadrante");
+			else if (combustivel == 2) {
+				gasolina += 1;
 			}
-			else if (x8 < 0 && y6 < 0) {
-				System.out.println("Terceiro quadrante");
+			else if (combustivel == 3) {
+				diesel += 1;
 			}
-			else {
-				System.out.println("Quarto quadrante");
-			}
-			x8 = sc10.nextInt();
-			y6 = sc10.nextInt();
+			combustivel = sc11.nextInt();
 		}
-				
-		sc10.close();
-			
+		
+		System.out.println("MUITO OBRIGADO");
+		System.out.println("Álcool: " + alcool);
+		System.out.println("Gasolina: " + gasolina);
+		System.out.println("Diesel: " + diesel);
+		
+		sc11.close();
 	}
 }
