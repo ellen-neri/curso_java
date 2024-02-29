@@ -209,9 +209,9 @@ public class Main {
 		//EXERCÍCIO01 (FOR)
 //		Scanner sc12 = new Scanner (System.in);
 //		
-//		int x = sc12.nextInt();
+//		int x9 = sc12.nextInt();
 //		
-//		for (int i=1; i<=x; i++) {
+//		for (int i=1; i<=x9; i++) {
 //			if (i % 2 != 0) {
 //				System.out.println(i);
 //			}
@@ -221,27 +221,46 @@ public class Main {
 		
 		
 		//EXERCÍCIO02
-		Scanner sc13 = new Scanner (System.in);
+//		Scanner sc13 = new Scanner (System.in);
+//		
+//		int n = sc13.nextInt();
+//		
+//		int in = 0;
+//		int out = 0;
+//		
+//		for (int i=0; i<n; i++) {
+//			int x10 = sc13.nextInt();
+//			if (x10 >= 10 && x10 <= 20) {
+//				in += 1;
+//			}
+//			else {
+//				out += 1;
+//			}
+//		}
+//		
+//		System.out.println(in + " in");
+//		System.out.println(out + " out");
+//		
+//		sc13.nextInt();
 		
-		int n = sc13.nextInt();
 		
-		int in = 0;
-		int out = 0;
+		//EXERCÍCIO03
+		Locale.setDefault(Locale.US);
+		Scanner sc14 = new Scanner (System.in);
+		
+		int n = sc14.nextInt();
 		
 		for (int i=0; i<n; i++) {
-			int x = sc13.nextInt();
-			if (x >= 10 && x <= 20) {
-				in += 1;
-			}
-			else {
-				out += 1;
-			}
+			double a = sc14.nextDouble();
+			double b = sc14.nextDouble();
+			double c = sc14.nextDouble();
+			
+			double media = (a * 2.0 + b * 3.0 + c * 5.0) / 10.0;
+			
+			System.out.printf("%.1f%n", media);
 		}
 		
-		System.out.println(in + " in");
-		System.out.println(out + " out");
-		
-		sc13.nextInt();
+		sc14.close();
 		
 	}
 }
