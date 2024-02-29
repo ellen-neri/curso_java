@@ -207,17 +207,41 @@ public class Main {
 		
 		
 		//EXERCÍCIO01 (FOR)
+//		Scanner sc12 = new Scanner (System.in);
+//		
+//		int x = sc12.nextInt();
+//		
+//		for (int i=1; i<=x; i++) {
+//			if (i % 2 != 0) {
+//				System.out.println(i);
+//			}
+//		}
+//		
+//		sc12.nextInt();
 		
-		Scanner sc12 = new Scanner (System.in);
 		
-		int x = sc12.nextInt();
+		//EXERCÍCIO02
+		Scanner sc13 = new Scanner (System.in);
 		
-		for (int i=1; i<=x; i++) {
-			if (i % 2 != 0) {
-				System.out.println(i);
+		int n = sc13.nextInt();
+		
+		int in = 0;
+		int out = 0;
+		
+		for (int i=0; i<n; i++) {
+			int x = sc13.nextInt();
+			if (x >= 10 && x <= 20) {
+				in += 1;
+			}
+			else {
+				out += 1;
 			}
 		}
 		
-		sc12.nextInt();
+		System.out.println(in + " in");
+		System.out.println(out + " out");
+		
+		sc13.nextInt();
+		
 	}
 }
