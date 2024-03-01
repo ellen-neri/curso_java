@@ -245,22 +245,59 @@ public class Main {
 		
 		
 		//EXERCÍCIO03
-		Locale.setDefault(Locale.US);
-		Scanner sc14 = new Scanner (System.in);
+//		Locale.setDefault(Locale.US);
+//		Scanner sc14 = new Scanner (System.in);
+//		
+//		int n = sc14.nextInt();
+//		
+//		for (int i=0; i<n; i++) {
+//			double a = sc14.nextDouble();
+//			double b = sc14.nextDouble();
+//			double c = sc14.nextDouble();
+//			
+//			double media = (a * 2.0 + b * 3.0 + c * 5.0) / 10.0;
+//			
+//			System.out.printf("%.1f%n", media);
+//		}
+//		
+//		sc14.close();
 		
-		int n = sc14.nextInt();
 		
-		for (int i=0; i<n; i++) {
-			double a = sc14.nextDouble();
-			double b = sc14.nextDouble();
-			double c = sc14.nextDouble();
-			
-			double media = (a * 2.0 + b * 3.0 + c * 5.0) / 10.0;
-			
-			System.out.printf("%.1f%n", media);
+		//EXERCÍCIO04
+//		Locale.setDefault(Locale.US);
+//		Scanner sc15 = new Scanner (System.in);
+//		
+//		int n = sc15.nextInt();
+//		
+//		for (int i=0; i<n; i++) {
+//			int x = sc15.nextInt();
+//			int y = sc15.nextInt();
+//			
+//			if (y == 0) {
+//				System.out.println("Divisão impossível");
+//			}
+//			else {
+//				double div = (double) x / y;
+//				System.out.printf("%.1f%n", div);
+//			}
+//		}
+//		
+//		sc15.close();
+		
+		
+		//EXERCÍCIO05
+		Scanner sc = new Scanner(System.in);
+
+		int n = sc.nextInt();
+		
+		int fat = 1;
+		for (int i=1; i<=n; i++) {
+			fat = fat * i;
 		}
 		
-		sc14.close();
+		System.out.println(fat);
+		
+		sc.close();
 		
 	}
 }
